@@ -1,0 +1,184 @@
+.App {
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f8ff 100%);
+  margin: 0;
+  padding: 0;
+  color: #22223b;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background: linear-gradient(90deg, #5f6caf 0%, #7f53ac 100%);
+  box-shadow: 0 4px 12px rgba(95, 108, 175, 0.15);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(127, 83, 172, 0.15);
+}
+
+.navbar-nav .nav-link {
+  color: #e0e7ff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #ffd166 !important;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #7f53ac;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Table styles */
+table {
+  width: 95%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(127, 83, 172, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #e0e7ff;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  background: linear-gradient(90deg, #7f53ac 0%, #5f6caf 100%);
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+table tr:nth-child(even) {
+  background-color: #f3e8ff;
+}
+
+table tr:hover {
+  background-color: #ffd6e0;
+}
+
+/* Button styles */
+button, .btn {
+  background: linear-gradient(90deg, #7f53ac 0%, #5f6caf 100%);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(127, 83, 172, 0.10);
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ffd166 0%, #7f53ac 100%);
+  color: #22223b;
+}
+
+/* Card styles */
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(127, 83, 172, 0.10);
+  border: none;
+}
+
+.card-title {
+  color: #5f6caf;
+}
+
+/* Links */
+a, .App-link {
+  color: #7f53ac;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover, .App-link:hover {
+  color: #ffd166;
+  text-decoration: underline;
+}
+
+/* Misc */
+.component-text {
+  color: #5f6caf;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  color: #7f53ac;
+  background: #fff;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(127, 83, 172, 0.08);
+  font-size: 1.1rem;
+}
+
+.App-logo {
+  height: 40px;
+  pointer-events: none;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(135deg, #7f53ac 0%, #5f6caf 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
